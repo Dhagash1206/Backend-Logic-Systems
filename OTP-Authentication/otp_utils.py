@@ -1,5 +1,4 @@
 """
-otp_utils.py - Production-level OTP generation and verification
 Requirements: pip install pyotp qrcode[pil]
 """
 

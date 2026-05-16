@@ -1,5 +1,4 @@
 """
-bcrypt_utils.py - Production-level bcrypt password hashing utility
 Requirements: pip install bcrypt
 """
 
