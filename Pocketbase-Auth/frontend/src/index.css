@@ -1,0 +1,149 @@
+:root {
+  --bg: #0a1128;
+  --surface: #0f1b3d;
+  --surface-2: #142759;
+  --border: #22336f;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --text: #e6ebff;
+  --text-dim: #8ea0d6;
+  --error: #ff6b6b;
+  --success: #4ade80;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #101c45 0%, var(--bg) 70%);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--text);
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 10, 0.5);
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+p.subtitle {
+  color: var(--text-dim);
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-dim);
+  margin: 14px 0 6px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+input:focus {
+  border-color: var(--accent);
+}
+
+button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 11px;
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+button:hover {
+  background: var(--accent-hover);
+}
+button:active {
+  transform: scale(0.98);
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.switch {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.switch a {
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: none;
+}
+.switch a:hover {
+  text-decoration: underline;
+}
+
+.msg {
+  margin-top: 14px;
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+.msg.error {
+  background: rgba(255, 107, 107, 0.1);
+  color: var(--error);
+}
+.msg.success {
+  background: rgba(74, 222, 128, 0.1);
+  color: var(--success);
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 auto 14px;
+}
+
+.logout {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+}
+.logout:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
