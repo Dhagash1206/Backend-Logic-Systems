@@ -1,0 +1,15 @@
+
+name = "cdn-edge"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+ORIGIN_URL = "https://origin.example.com"
+ORIGIN_TIMEOUT_MS = "5000"
+DEFAULT_TTL = "300"
+
+[observability]
+enabled = true
+
+# Production route (replace with your domain)
+# routes = [{ pattern = "cdn.example.com/*", zone_name = "example.com" }]
